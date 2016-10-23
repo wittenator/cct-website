@@ -8,11 +8,12 @@
 #projectprocess {
 
 	outline: dashed;
-	height:1000px;
+	height:700px;
 	width:0px;
 	outline-width: 0.5px;
+	margin-top:20px;
 }
-#bluecircle {
+.bluecircle {
 
 	border: solid;
 	border-width: 4px;
@@ -22,7 +23,11 @@
 	border-radius: 50px;
 	background-color: white;
 	transform:translate(-50%,0%);
-	margin-top:40px;
+	margin-top:120px;
 
 
+}
+
+#firstcircle{
+	margin-top: 0px;
 }
