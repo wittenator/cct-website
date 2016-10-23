@@ -12,6 +12,7 @@
 	width:0px;
 	outline-width: 0.5px;
 	margin-top:20px;
+	margin-left:50%;
 }
 .bluecircle {
 
@@ -30,4 +31,7 @@
 
 #firstcircle{
 	margin-top: 0px;
+}
+.popover{
+
 }
