@@ -79,7 +79,10 @@ margin: auto;
 	letter-spacing: 6px;
 }
 
-.h3_home{font-weight: 300;}
+.h3_home{
+    font-weight: 300;
+    color: white;
+}
 
 /*own carousel */
 
