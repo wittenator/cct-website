@@ -72,5 +72,9 @@ $(document).ready(function() {
 			bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
 		} );
 
+	$(function () {
+  		$('[data-toggle="popover"]').popover()
+	});
+
 });
 
