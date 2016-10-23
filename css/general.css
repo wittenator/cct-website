@@ -312,9 +312,9 @@ color: #ECEBEB;
 }
 
 .banner {
-	padding: 100px 0;
+	padding: 200px 0;
 	color: #f8f8f8;
-	background: url(../img/intro/banner-bg.jpg) no-repeat center center;
+	background: url(../img/berlin.jpeg) no-repeat center center;
 	background-size: cover;
 }
 
