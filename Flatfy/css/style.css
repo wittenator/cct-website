@@ -328,6 +328,14 @@ li{list-style-type:none}
   line-height: 1.46428571;
   font-weight: 300;
 }
+.lead-sm {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.46428571;
+  font-weight: 350;
+}
+
 @media (min-width: 768px) {
   .lead {
 	
