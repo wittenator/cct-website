@@ -1,192 +1,212 @@
 /* general styles */
 html, body {
-height: 100%;
-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 /* padded section */
 .pad-section {
-padding: 50px 0;
+    padding: 50px 0;
 }
 .pad-section img {
-width: 100%;
+    width: 100%;
 }
 /* vertical-centered text */
 .text-vcenter {
-display: table-cell;
-text-align: center;
-vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 .text-vcenter h1 {
-font-size: 4.5em;
-font-weight: 700;
-margin: 0;
-padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 /* additional sections */
 #ueber_uns {
-	color: white;
+    color: white;
 }
 
 #juniter {
-/*background: url(../images/4.jpg) no-repeat center center fixed; */
-display: table;
-height: 100%;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    /*background: url(../images/4.jpg) no-repeat center center fixed; */
+    background: #000;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #ueber_uns {
-background: url(../images/3.jpg) no-repeat center center fixed; 
-display: table;
-height: 800px;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    // background: url(../images/7_lq.jpg) no-repeat center center fixed; 
+	background: rgb(236, 108, 14);
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #leistungen {
-background: url(../images/4.jpg) no-repeat center center fixed; 
-display: table;
-height: 800px;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-color: #ffffff;
+	background-color: #000; /* Old browsers */
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop( 50%, #000 ), color-stop( 50%, #000 ), color-stop( 50%, rgb(236,108,14) ) ); /* Chrome, Safari4+ */
+	background-image: -webkit-linear-gradient( top, #000 50%, #000 50%, rgb(236,108,14) 50% ); /* Chrome10+, Safari5.1+ */    
+	background-image:    -moz-linear-gradient( top, #000 50%, #000 50%, rgb(236,108,14) 50% ); /* Fx3.6+ */   
+	background-image:         linear-gradient(      #000 50%, #000 50%, rgb(236,108,14) 50% ); /* W3C */
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
 }
 #leistungen .glyphicon {
-border: 2px solid #FFFFFF;
-border-radius: 50%;
-display: inline-block;
-font-size: 60px;
-height: 140px;
-line-height: 140px;
-text-align: center;
-vertical-align: middle;
-width: 140px;
+    border: 2px solid rgb(236, 108, 14);
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 60px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+    color: rgb(236, 108, 14);
 }
 #referenzen {
-color: white;
-background: url(../images/6.jpg) no-repeat center center fixed; 
-display: table;
-height: 800px;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    color: white;
+    // background: url(../images/9.png) no-repeat center center fixed;
+	background: #444444;
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #referenzen .panel {
-color: #444444;
-opacity: 0.85;
+    color: #444444;
+    opacity: 0.85;
 }
 #referenzen .panel-default {
-	color: white;
-	background:rgba(50,50,50,.8);
-	border:none;
+    color: white;
+    background:rgba(50,50,50,.8);
+    border:none;
 }
 #referenzen .panel-heading {
-	color: white;
-	background:rgba(50,50,50,.8);
-	border:none;
+    color: white;
+    background:rgba(50,50,50,.8);
+    border:none;
 }
 #kontakt {
-color: white;
-background: url(../images/5.jpg) no-repeat center center fixed; 
-display: table;
-height: 800px;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    color: white;
+    background: url(../images/5.jpg) no-repeat center center fixed; 
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #jobs {
-background: url(../images/3.jpg) no-repeat center center fixed; 
-display: table;
-height: 800px;
-position: relative;
-width: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    background: url(../images/3.jpg) no-repeat center center fixed; 
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 footer {
-padding: 20px 0;
-background-color:#000;
-color:white;
+    padding: 20px 0;
+    background-color:#000;
+    color:white;
 }
 footer .glyphicon {
-color: #333333;
-font-size: 60px;
+    color: #333333;
+    font-size: 60px;
 }
 footer .glyphicon:hover {
-color: #306d9f;
+    color: #306d9f;
 }
 
 .a-c {
-	font-size:15px;
-	text-decoration:underline;
-	color:rgb(200,200,200);
+    font-size:15px;
+    text-decoration:underline;
+    color:rgb(200,200,200);
 }
 
 .a-c:hover {
-	font-size:15px;
-	text-decoration:underline;
-	color:rgb(200,200,200);
+    font-size:15px;
+    text-decoration:underline;
+    color:rgb(200,200,200);
 }
 
 .a-c:active {
-	font-size:15px;
-	text-decoration:underline;
-	color:rgb(200,200,200);
+    font-size:15px;
+    text-decoration:underline;
+    color:rgb(200,200,200);
 }
 
 .video-container {
-  position: relative;
+    position: relative;
 }
 video {
-  height: auto;
-  vertical-align: middle;
-  width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
 }
 .overlay-desc {
-  background: rgba(0,0,0,0);
-  padding: 20px;
-  position: absolute;
-  top: 100px; left: 0; right:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: rgba(0,0,0,0);
+    padding: 20px;
+    position: absolute;
+    top: 78px; left: 0; right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-desc2 {
+    position: absolute;
+    // background: url(../images/plakat.jpg) no-repeat center center fixed; 
+    top: 230px; left: 370px; right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .overlay-desc a {
-	color:rgb(235,108,22);
+    color:rgb(235,108,22);
 }
 h1 {
-  color: white;
-  font-family: 'Nobile', sans-serif;
-  font-size: 9vw;
-  text-align: center;
+    color: white;
+    font-family: 'Nobile', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+	font-size:3em;
 }
 
 p {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7rem;
 }
 
 nav {
-	background-color: black;
+    background-color: black;
 }
