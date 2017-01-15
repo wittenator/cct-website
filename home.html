@@ -14,22 +14,6 @@
 
         <link href="css/style.css" rel="stylesheet" />
     </head>
-    <script>
-        function detectmob() {
-            if (navigator.userAgent.match(/Android/i)
-                    || navigator.userAgent.match(/webOS/i)
-                    || navigator.userAgent.match(/iPhone/i)
-                    || navigator.userAgent.match(/iPad/i)
-                    || navigator.userAgent.match(/iPod/i)
-                    || navigator.userAgent.match(/BlackBerry/i)
-                    || navigator.userAgent.match(/Windows Phone/i)
-                    ) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    </script>
     <body>
         <!--  BODY PAGE CONTENT -->
         <!-- navigation panel -->
@@ -59,8 +43,9 @@
         </nav>
         <!-- first section - Home -->
         <div id="juniter" class="home">
+			
             <div class="text-vcenter">
-                <!-- img -->
+                
                 <div class="video-container">
                     <div align="center" class="embed-responsive embed-responsive-16by9">
                         <video id="my-video" autoplay class="embed-responsive-item">
@@ -73,28 +58,24 @@
                         <div class="overlay-desc"  style="background:rgba(0,0,0,1);">
                             <img src="images/logo.png"/>
                             <h2 style="color:rgb(255,255,255)">Studentische IT-Lösungen - Made in Berlin</h2>
-                            <!-- <button style="background:rgb(236, 108, 14); border-color:rgb(236, 108, 14); margin-left:10px;" class="btn btn-success">mehr erfahren</button> -->
+                            
                         </div>
                         <div class="overlay-desc2">
-                            <button id="the-button" class="btn btn-success" style="display:none; background:rgb(236,108,14);border:none;">mehr erfahren</button>
-                            <!--
-                            <a href="#jobs">
-                                <img src="images/plakat.jpg" />
-                            </a>
-                            -->
+                            <a id="the-button" class="btn btn-success" style="display:none; background:rgb(236,108,14);border:none;" href="#ueber_uns">mehr erfahren</a>
                         </div>
                     </div>
                 </div>
             </div>
+			
         </div>
         <!-- /first section -->
         <!-- second section - About -->
-        <div id="ueber_uns" class="pad-section">
+		<div id="ueber_uns" class="pad-section">
             <div class="container">
                 <h2 class="text-center" style="background-color: transparent; color: rgb(172, 60, 0); font-size:3em;">Über uns<br>Synthese aus IT und Consulting</h2>
                 <div class="row">
                     <div class="col-sm-4">
-                        <!--<img src="images/wordcloud.png" class="img-responsive" />-->
+						<img src="images/wordcloud.png" class="img-responsive" />
                     </div>
                     <div class="col-sm-8 text-center">
                         <p class="lead" style="font-size:1.2em; text-align:left; padding:20px;">
@@ -165,14 +146,14 @@
                 <div class="row">
 
                     <!--Webapplikationen-->
-                    <div class="col-md-2">
+                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
                         <i class="glyphicon glyphicon-cloud"> </i>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <h3>Webapplikationen</h3>
                         <p>Unsere Kompetenzen umfassen die Entwicklung von maßgeschneiderten und innovativen Web 2.0 –Lösungen. Sei es Ihre professionelle Webpräsenz oder Ihr Online-Shop- wir ermöglichen Ihnen eine optimal an Ihre Vorstellungen angepasste Planung, Konzipierung und Realisierung Ihrer Vorhaben.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3>Referenzen</h3>
                         <ul>
                             <li><p>Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt (2011)</p></li>
@@ -182,14 +163,14 @@
                     </div>     
 
                     <!--Individualsoftware-->
-                    <div class="col-md-2">
+                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
                         <i class="glyphicon glyphicon-user"> </i>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <h3>Individualsoftware</h3>
                         <p>Wir bieten Ihrem Unternehmen individuelle IT-Lösungen , die Sie durch ihre Flexibilität und Effizienz in ihren Arbeitsalltag unterstützen. Dabei analysieren, planen und implementieren wir eine für Sie maßgeschneiderte Lösung. Umfassende Expertise in der Nutzung von OpenSource-Komponenten ermöglicht es uns, effektive und kostengünstige Ergebnisse zu liefern.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3>Referenzen</h3>
                         <ul>
                             <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
@@ -199,14 +180,14 @@
                     </div>     
 
                     <!--IT-Beratung-->
-                    <div class="col-md-2">
+                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
                         <i class="glyphicon glyphicon-thumbs-up"> </i>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <h3>IT-Beratung</h3>
                         <p>Aufgrund unser langjährigen Erfahrung im Bereich der erfolgreichen Implementierung und Optimierung von IT-Strukturen in Unternehmen sind wir in der Lage Sie bei der Erneuerung Ihrer firmeneigenen Infrastruktur sowie Ihrer Software zu unterstützen.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3>Referenzen</h3>
                         <ul>
                             <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
@@ -216,14 +197,14 @@
                     </div>     
 
                     <!--Mobile Anwendungen-->
-                    <div class="col-md-2">
+                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
                         <i class="glyphicon glyphicon-phone"> </i>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <h3>Mobile Anwendungen</h3>
                         <p>Mobile Anwendungen sind für erfolgreiche Unternehmen unentbehrlich. Wir programmieren für Sie innovative und intuitive Apps, unterstützt durch die Kreativität aus engen Kooperationen mit Start-Ups.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3>Referenzen</h3>
                         <ul>
                             <li><p>Implementierung einer Applikation für Android (2013)</p></li>
@@ -257,7 +238,7 @@
                         <img src="images/plakat.jpg" />
                     </div>
                     <div class="col-sm-8">
-                        <h3>Deine Chance!</h3>
+                        <h3 style="color:rgb(236,108,14)">Deine Chance!</h3>
                         <p>
                             Juniter bietet Dir schon während des Studiums die Möglichkeit, Unternehmenskontakte zu knüpfen und Erfahrungen in der Arbeitswelt zu sammeln. Stelle Dich der Herausforderung, Deine Fähigkeiten und Kenntnisse in die Praxis umzusetzen, dabei Geld zu verdienen und Dein Wissen in Projektarbeit und im Projektmanagement auszubauen.
                             <br><br>
@@ -265,7 +246,7 @@
                             <br><br>
                             Nutze die Chance Dich persönlich und fachlich weiterzuentwickeln, damit Du später erfolgreich und mit den besten Voraussetzungen in Deinen Beruf einsteigen kannst!
                         </p>
-                        <h3>Unsere Anforderungen</h3>
+                        <h3 style="color:rgb(236,108,14)">Unsere Anforderungen</h3>
                         <p>
                             Juniter versteht sich als ein innovatives IT-Team, in dem jedes Mitglied für sich den maximalen Nutzen aus Projektarbeit und Wissenstransfer ziehen sollte, um mit den gesammelten Erfahrungen Juniter weiter zu stärken und auszubauen.
                             <br><br>
@@ -275,7 +256,7 @@
                         </p>
                     </div>
                     <div class="col-md-12">
-                        <h3>Interesse?</h3>
+                        <h3 style="color:rgb(236,108,14)">Interesse?</h3>
                         <p>Nutze das Kontaktformular um Dich bei uns zu bewerben!</p>
                     </div>
                     <div class="col-sm-12">
