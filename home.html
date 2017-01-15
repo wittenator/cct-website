@@ -14,6 +14,22 @@
 
         <link href="css/style.css" rel="stylesheet" />
     </head>
+    <script>
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i)
+                    || navigator.userAgent.match(/webOS/i)
+                    || navigator.userAgent.match(/iPhone/i)
+                    || navigator.userAgent.match(/iPad/i)
+                    || navigator.userAgent.match(/iPod/i)
+                    || navigator.userAgent.match(/BlackBerry/i)
+                    || navigator.userAgent.match(/Windows Phone/i)
+                    ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
     <body>
         <!--  BODY PAGE CONTENT -->
         <!-- navigation panel -->
@@ -78,7 +94,7 @@
                 <h2 class="text-center" style="background-color: transparent; color: rgb(172, 60, 0); font-size:3em;">Über uns<br>Synthese aus IT und Consulting</h2>
                 <div class="row">
                     <div class="col-sm-4">
-						<img src="images/wordcloud.png" class="img-responsive" />
+                        <!--<img src="images/wordcloud.png" class="img-responsive" />-->
                     </div>
                     <div class="col-sm-8 text-center">
                         <p class="lead" style="font-size:1.2em; text-align:left; padding:20px;">
@@ -100,8 +116,9 @@
         <div id="leistungen" class="pad-section">
             <div class="fluidcontainer">
                 <h2 class="text-center" style="background:rgb(0,0,0); font-size:3em;">Unsere Leistungen</h2>
-                <div class="row text-center" style="background:rgb(0,0,0)">
-                    <div class="col-sm-4 col-xs-6">
+                <br><br>
+                <div class="row text-center" style="margin-top:20px; background:rgb(0,0,0)">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
                         <i class="glyphicon glyphicon-cloud"> </i>
                         <h4>Webentwicklung</h4>
                         <p style="text-align:center">
@@ -109,7 +126,7 @@
                             Webanwendungen
                         </p>
                     </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
                         <i class="glyphicon glyphicon-phone"> </i>
                         <h4>Mobile Anwendungen</h4>
                         <p>
@@ -118,13 +135,13 @@
                             Windows Phone
                         </p>
                     </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <i class="glyphicon glyphicon-thumbs-up"> </i>
                         <h4>IT-Beratung</h4>
                         <p></p>
                     </div>
                 </div>
-                <div class="row text-center" style="background-color:rgb(236,108,14); padding:20px;">
+                <div class="row text-center" style="margin-top:30px; background-color:rgb(236,108,14); padding:20px;">
                     <p class="lead" style="font-size:1.2em">
                         Unser interdisziplinäres Team ermöglicht es, die Bedürfnisse unserer Kunden in verschiedensten Bereichen zu erkennen und zu erfüllen.
                         Da wir unabhängig von Hard- oder Softwareanbietern arbeiten, sind wir in der Lage kundenspezifische Lösungen zu entwickeln und Ihnen somit die individuell am besten geeigneten Produkte anzubieten.
@@ -135,97 +152,83 @@
         </div>
         <!-- /third section -->
         <!-- fourth section - Information -->
-        <div id="referenzen" class="pad-section">
+        <div id="referenzen" class="pad-section" style="background-color:rgb(38,38,38);">
             <div class="container">
-                <h2 class="text-center">Referenzen</h2>
+                <h2 class="text-center" style="color: #777;">Referenzen</h2>
+                <br><br>
                 <p style="text-align:left;">
                     Die hervorragenden Qualifikationen unserer Mitarbeiter, sowie die Erfahrungen aus bereits erfolgreich absolvierten Projekten sind Indikatoren für unsere Leistungsfähigkeit.
                     <br><br>
                     Um Ihnen einen Überblick über durchgeführte Projekte zu geben, hier einige unserer Referenzen. 
                 </p>
+                <br><br>
                 <div class="row">
-                    <div class="col-sm-12">
-						<div class="table-responsive">
-							<table class="table">
-								<tr>
-									<td><h3>Webapplikationen</h3>Unsere Kompetenzen umfassen die Entwicklung von maßgeschneiderten und innovativen Web 2.0 –Lösungen. Sei es Ihre professionelle Webpräsenz oder Ihr Online-Shop- wir ermöglichen Ihnen eine optimal an Ihre Vorstellungen angepasste Planung, Konzipierung und Realisierung Ihrer Vorhaben.</td>
-									<td>
-										<h3>Referenzen</h3>
-										<ul>
-											<li>Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt (2011)</li>
-											<li>Konzeptionierung und Anpassung eines Onlineshops für gebrauchte Kinderkleidung (2011)</li>
-											<li>Entwicklung einer Webseite für die Perform GmbH inklusive Design, Umsetzung in Drupal 7 und Erstellung von Texten (2012)</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                    </div>                    <div class="col-sm-12">
-						<div class="table-responsive">
-							<table class="table">
-								<tr>
-									<td><h3>Individualsoftware</h3>Wir bieten Ihrem Unternehmen individuelle IT-Lösungen , die Sie durch ihre Flexibilität und Effizienz in ihren Arbeitsalltag unterstützen. Dabei analysieren, planen und implementieren wir eine für Sie maßgeschneiderte Lösung. Umfassende Expertise in der Nutzung von OpenSource-Komponenten ermöglicht es uns, effektive und kostengünstige Ergebnisse zu liefern.</td>
-									<td>
-										<h3>Referenzen</h3>
-										<ul>
-											<li>Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt (2011)</li>
-											<li>Konzeptionierung und Anpassung eines Onlineshops für gebrauchte Kinderkleidung (2011)</li>
-											<li>Entwicklung einer Webseite für die Perform GmbH inklusive Design, Umsetzung in Drupal 7 und Erstellung von Texten (2012)</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
+
+                    <!--Webapplikationen-->
+                    <div class="col-md-2">
+                        <i class="glyphicon glyphicon-cloud"> </i>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title text-center"></h2>
-                            </div>
-                            <div class="panel-body lead">
-                                
-                                <br><br>
-                                <p>Referenzen</p>
-                                <ul>
-                                    <li>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</li>
-                                    <li>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</li>
-                                    <li>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <h3>Webapplikationen</h3>
+                        <p>Unsere Kompetenzen umfassen die Entwicklung von maßgeschneiderten und innovativen Web 2.0 –Lösungen. Sei es Ihre professionelle Webpräsenz oder Ihr Online-Shop- wir ermöglichen Ihnen eine optimal an Ihre Vorstellungen angepasste Planung, Konzipierung und Realisierung Ihrer Vorhaben.</p>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title text-center">IT-Beratung</h2>
-                            </div>
-                            <div class="panel-body lead">
-                                Aufgrund unser langjährigen Erfahrung im Bereich der erfolgreichen Implementierung und Optimierung von IT-Strukturen in Unternehmen sind wir in der Lage Sie bei der Erneuerung Ihrer firmeneigenen Infrastruktur sowie Ihrer Software zu unterstützen. 
-                                <br><br>
-                                <p>Referenzen</p>
-                                <ul>
-                                    <li>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</li>
-                                    <li>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</li>
-                                    <li>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <h3>Referenzen</h3>
+                        <ul>
+                            <li><p>Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt (2011)</p></li>
+                            <li><p>Konzeptionierung und Anpassung eines Onlineshops für gebrauchte Kinderkleidung (2011)</p></li>
+                            <li><p>Entwicklung einer Webseite für die Perform GmbH inklusive Design, Umsetzung in Drupal 7 und Erstellung von Texten (2012)</p></li>
+                        </ul>
+                    </div>     
+
+                    <!--Individualsoftware-->
+                    <div class="col-md-2">
+                        <i class="glyphicon glyphicon-user"> </i>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title text-center">Mobile Anwendungen</h2>
-                            </div>
-                            <div class="panel-body lead">
-                                Mobile Anwendungen sind für erfolgreiche Unternehmen unentbehrlich. Wir programmieren für Sie innovative und intuitive Apps, unterstützt durch die Kreativität aus engen Kooperationen mit Start-Ups. 
-                                <br><br>
-                                <p>Referenzen</p>
-                                <ul>
-                                    <li>Implementierung einer Applikation für Android (2013)</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <h3>Individualsoftware</h3>
+                        <p>Wir bieten Ihrem Unternehmen individuelle IT-Lösungen , die Sie durch ihre Flexibilität und Effizienz in ihren Arbeitsalltag unterstützen. Dabei analysieren, planen und implementieren wir eine für Sie maßgeschneiderte Lösung. Umfassende Expertise in der Nutzung von OpenSource-Komponenten ermöglicht es uns, effektive und kostengünstige Ergebnisse zu liefern.</p>
                     </div>
+                    <div class="col-md-4">
+                        <h3>Referenzen</h3>
+                        <ul>
+                            <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
+                            <li><p>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</p></li>
+                            <li><p>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</p></li>
+                        </ul>
+                    </div>     
+
+                    <!--IT-Beratung-->
+                    <div class="col-md-2">
+                        <i class="glyphicon glyphicon-thumbs-up"> </i>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>IT-Beratung</h3>
+                        <p>Aufgrund unser langjährigen Erfahrung im Bereich der erfolgreichen Implementierung und Optimierung von IT-Strukturen in Unternehmen sind wir in der Lage Sie bei der Erneuerung Ihrer firmeneigenen Infrastruktur sowie Ihrer Software zu unterstützen.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Referenzen</h3>
+                        <ul>
+                            <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
+                            <li><p>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</p></li>
+                            <li><p>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</p></li>
+                        </ul>
+                    </div>     
+
+                    <!--Mobile Anwendungen-->
+                    <div class="col-md-2">
+                        <i class="glyphicon glyphicon-phone"> </i>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Mobile Anwendungen</h3>
+                        <p>Mobile Anwendungen sind für erfolgreiche Unternehmen unentbehrlich. Wir programmieren für Sie innovative und intuitive Apps, unterstützt durch die Kreativität aus engen Kooperationen mit Start-Ups.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Referenzen</h3>
+                        <ul>
+                            <li><p>Implementierung einer Applikation für Android (2013)</p></li>
+                        </ul>
+                    </div>     
                 </div>
             </div>
         </div>
@@ -233,10 +236,11 @@
         <!-- fifth section -->
         <div id="kontakt" class="pad-section">
             <div class="container">
-                <h2 class="text-center">Kontakt</h2> <hr />
+                <h2 class="text-center" style="color:rgb(172, 60, 0);">Kontakt</h2>
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <p>Haben Sie Interesse an einem Projekt mit Juniter? Dann nehmen Sie bitte Kontakt mit unseren Projektmanagern auf.</p>
+                        <p>kontakt@juniter.de</p>
                     </div>
                 </div>
             </div>
@@ -252,32 +256,55 @@
                     <div class="col-sm-4 text-center">
                         <img src="images/plakat.jpg" />
                     </div>
-                    <div class="col-sm-6 text-center">
+                    <div class="col-sm-8">
+                        <h3>Deine Chance!</h3>
+                        <p>
+                            Juniter bietet Dir schon während des Studiums die Möglichkeit, Unternehmenskontakte zu knüpfen und Erfahrungen in der Arbeitswelt zu sammeln. Stelle Dich der Herausforderung, Deine Fähigkeiten und Kenntnisse in die Praxis umzusetzen, dabei Geld zu verdienen und Dein Wissen in Projektarbeit und im Projektmanagement auszubauen.
+                            <br><br>
+                            Wir bieten Dir abwechslungsreiche Projektarbeit im Team und die Möglichkeit, interessante und nette Leute kennen zu lernen. In Schulungen und Workshops werden Dein Know-How, Hintergrundwissen und Soft Skills gefördert, um so die Qualität der Projektdurchführung und -ergebnisse zu gewährleisten.
+                            <br><br>
+                            Nutze die Chance Dich persönlich und fachlich weiterzuentwickeln, damit Du später erfolgreich und mit den besten Voraussetzungen in Deinen Beruf einsteigen kannst!
+                        </p>
+                        <h3>Unsere Anforderungen</h3>
+                        <p>
+                            Juniter versteht sich als ein innovatives IT-Team, in dem jedes Mitglied für sich den maximalen Nutzen aus Projektarbeit und Wissenstransfer ziehen sollte, um mit den gesammelten Erfahrungen Juniter weiter zu stärken und auszubauen.
+                            <br><br>
+                            Um bei uns mitzuarbeiten, solltest Du neben dem Studentenstatus viel Engagement und ein gutes Zeitmanagement aufzeigen, sowie fundierte Kenntnisse auf dem Gebiet der Informationstechnologie besitzen.
+                            <br><br>
+                            Team- und Kritikfähigkeit, sowie Selbstständigkeit und Verantwortungsbewusstsein sind wichtige Voraussetzungen, damit Juniter als Einheit funktioniert und die Projektarbeit reibungslos ablaufen kann.
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Interesse?</h3>
+                        <p>Nutze das Kontaktformular um Dich bei uns zu bewerben!</p>
+                    </div>
+                    <div class="col-sm-12">
                         <form action="formular.php" method="post">
-                            <div style="width: 50%; float:left;">
-                                Vorname:<input name="vname" size="40" type="text">
-                                Name: <input name="name" size="40" type="text">
-                                E-Mail:<input name="mail" size="40" type="email">
-                            </div>
-                            <div style="width: 50%; float: left;">
-                                Telefon:<input name="tel" size="40" type="text">
-                                Hochschule:<input name="hochschule" size="40" type="text">
-                                Studiengang:<input name="studiengang" size="40" type="text">
-                            </div>
-                            <p>Kenntnisse (IT-KnowHow, Software-/ Hardware-Kenntnisse, SoftSkills, Projekterfahrung etc.):
-                                <textarea name="kenntnisse" cols="35" rows="5" style="width: 80%;"></textarea>
-                            </p><br>
-                            <p>Motivation (Warum möchtest Du Dich bei Juniter engagieren? Was möchtest Du lernen? Welche Ziele hast Du?): <br>
-                                <textarea name="motivation" cols="35" rows="5" style="width: 80%;"></textarea>
-                            </p><br>
-                            <p>Verfügbarkeit: (Wie viele Stunden bist Du bereit Dich wöchentlich für Juniter zu engagieren? Wann wirst Du Dein Studium voraussichtlich beenden? Planst Du längere Abwesenheiten für Auslandsstudium, Praktika o.ä.?): <br>
-                                <textarea name="verfuegbarkeit" cols="35" rows="5" style="width: 80%"></textarea>
-                            </p>
+
+                            <div class="form-group">
+                                <label for="vname">Vorname</label>
+                                <input class="form-control myform" id="vname" name="vname" size="40" type="text">
+                                <label for="vname">Name</label>
+                                <input class="form-control myform" id="name" name="vname" size="40" type="text">
+                                <label for="vname">E-Mail</label>
+                                <input class="form-control myform" id="mail" name="mail" size="40" type="email">
+                                <label for="tel">Telefon</label>
+                                <input class="form-control myform" id="tel" name="tel" size="40" type="text">
+                                <label for="hochschule">Hochschule</label>
+                                <input class="form-control myform" id="hochschule" name="hochschule" size="40" type="text">
+                                <label for="studiengang">Studiengang</label>
+                                <input class="form-control myform" id="studiengang" name="studiengang" size="40" type="text">
+                            </div>  
+                            <label for="kenntnisse">Kenntnisse (IT-KnowHow, Software-/ Hardware-Kenntnisse, SoftSkills, Projekterfahrung etc.):</label>
+                            <textarea class="form-control myform" id="kenntnisse" name="kenntnisse" cols="35" rows="5" style="width: 80%;"></textarea>
                             <br>
-                            <p>
-                                <input name="submit" value="Senden" type="submit">
-                                <input name="back" value="Zurück" onclick="window.location.href = '../'" type="button">
-                            </p>
+                            <label for="motivation">Motivation (Warum möchtest Du Dich bei Juniter engagieren? Was möchtest Du lernen? Welche Ziele hast Du?):</label>
+                            <textarea class="form-control myform" id="motivation" name="motivation" cols="35" rows="5" style="width: 80%;"></textarea>
+                            <br>
+                            <label for="verfuegbarkeit">Verfügbarkeit: (Wie viele Stunden bist Du bereit Dich wöchentlich für Juniter zu engagieren? Wann wirst Du Dein Studium voraussichtlich beenden? Planst Du längere Abwesenheiten für Auslandsstudium, Praktika o.ä.?): </label>
+                            <textarea class="form-control myform" id="verfuegbarkeit" name="verfuegbarkeit" cols="35" rows="5" style="width: 80%"></textarea>
+                            <br>
+                            <input class="btn btn-success" style="background:rgb(236,108,14);border:none;" name="submit" value="Senden" type="submit">
                             <br>
                         </form>
                     </div>
