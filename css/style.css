@@ -41,8 +41,9 @@ html, body {
 }
 
 #ueber_uns {
-    // background: url(../images/7_lq.jpg) no-repeat center center fixed; 
     background: rgb(236, 108, 14);
+    //background: url(../images/yeah.png) no-repeat center center fixed; 
+    //background-position: 70% 20%;
     display: table;
     height: 800px;
     position: relative;
@@ -128,8 +129,8 @@ html, body {
 }
 #kontakt {
     color: white;
-    // background: url(../images/5.jpg) no-repeat center center fixed; 
     background-color: rgb(236,108,14);
+    background: url(../images/yeah.png) no-repeat center center fixed; 
     display: table;
     height: 800px;
     position: relative;
@@ -156,11 +157,13 @@ html, body {
 }
 .myform {
     background: transparent;
-    color: rgb(236,108,14);
+    // color: rgb(236,108,14);
+	color:white;
 }
 .myform:focus {
     background: transparent;
-    color: rgb(236,108,14);
+    // color: rgb(236,108,14);
+	color: white;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.075) inset, 0 0 8px rgba(236,108,14, 0.6);
     border-color: rgb(236,108,14);
 }
@@ -243,4 +246,11 @@ p {
 
 nav {
     background-color: black;
+}
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
