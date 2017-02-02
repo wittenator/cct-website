@@ -42,8 +42,6 @@ html, body {
 
 #ueber_uns {
     background: rgb(236, 108, 14);
-    //background: url(../images/yeah.png) no-repeat center center fixed; 
-    //background-position: 70% 20%;
     display: table;
     height: 800px;
     position: relative;
@@ -52,6 +50,16 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+#ueber_uns h2 {
+     background-color: transparent; 
+     color: rgb(172, 60, 0); 
+     font-size:3em;
+}
+#ueber_uns p {
+     font-size:1.2em; 
+     text-align:left; 
+     padding:20px;
 }
 #leistungen {
     background-color: #000; /* Old browsers */
@@ -81,6 +89,10 @@ html, body {
     vertical-align: middle;
     width: 140px;
     color: rgb(236, 108, 14);
+}
+#leistungen h2 {
+	 background:rgb(0,0,0); 
+	 font-size:3em;
 }
 #referenzen {
     color: white;
@@ -254,3 +266,53 @@ nav {
     vertical-align: middle;
     float: none;
 }
+
+.button-orange {
+    background:rgb(236,108,14);
+    border:none;
+}
+
+.text-white {
+    color:rgb(255,255,255);
+}
+
+.background-black {
+    background: #000;
+}
+
+#leistungen-header {
+	margin-top:20px; 
+	background:rgb(0,0,0);
+}
+
+#leistungen-footer {
+	 margin-top:30px; 
+	 background-color:rgb(236,108,14); 
+	 padding:20px;
+}
+
+.background-darkgrey {
+	 background-color:rgb(38,38,38);
+}
+
+.text-lightgrey {
+	color: #777;
+}
+
+.text-left {
+	text-align:left;
+}
+
+.color-darkorange {
+	color:rgb(172, 60, 0);
+}
+
+.text-white {
+	color: white;
+}
+
+.text-juniter-orange {
+	color:rgb(236,108,14);
+}
+
+

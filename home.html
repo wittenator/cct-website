@@ -5,18 +5,18 @@
         <meta name="author" content="Script Tutorials" />
         <title>Juniter | Studentische IT-Lösungen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <!-- attach CSS styles -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <!--  BODY PAGE CONTENT -->
-        <!-- navigation panel -->
+        <!-- 
+        ***************************
+        *    Navgiationsleiste    *
+        ***************************
+        -->
         <nav style="background: black;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-main">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#juniter">Home</a></li>
-                        <li><a href="#ueber_uns">Über uns</a></li>
+                        <li><a href="#ueber_uns">&Uumlber uns</a></li>
                         <li><a href="#leistungen">Leistungen</a></li>
                         <li><a href="#referenzen">Referenzen</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
@@ -41,47 +41,30 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <!-- first section - Home -->
+        <!-- 
+        ******************
+        *      Home      *
+        ******************
+        -->
+        <!-- Hier wird je nach Bildschirmbreite das Video oder das Bild geladen -->
         <div id="juniter" class="home">
-
-
-
-            <!--            <div class="text-vcenter">
-                            
-                            <div class="video-container">
-                                <div align="center" class="embed-responsive embed-responsive-16by9">
-                                    <video id="my-video" autoplay class="embed-responsive-item">
-                                        <source src="videos/6.mp4" type="video/mp4">
-                                    </video>
-                                    <script type="text/javascript">
-                                        /* play video twice as fast */
-                                        // document.getElementById("my-video").playbackRate  = .4;
-                                    </script>
-                                    <div class="overlay-desc"  style="background:rgba(0,0,0,1);">
-                                        <img src="images/logo.png"/>
-                                        <h2 style="color:rgb(255,255,255)">Studentische IT-Lösungen - Made in Berlin</h2>
-                                        
-                                    </div>
-                                    <div class="overlay-desc2">
-                                        <a id="the-button" class="btn btn-success" style="display:none; background:rgb(236,108,14);border:none;" href="#ueber_uns">mehr erfahren</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-
+            <!-- siehe main.js --> 
         </div>
-        <!-- /first section -->
-        <!-- second section - About -->
+        <!-- 
+        ******************
+        *    Über uns    *
+        ******************
+        -->
         <div id="ueber_uns" class="pad-section">
             <div class="container">
-                <h2 class="text-center" style="background-color: transparent; color: rgb(172, 60, 0); font-size:3em;">Über uns<br>Synthese aus IT und Consulting</h2>
+                <h2 class="text-center">Über uns<br>Synthese aus IT und Consulting</h2>
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="images/yeah3.png" class="img-responsive" />
+                        <img src="images/clouds.png" class="img-responsive" />
                         <img src="images/wordcloud.png" class="img-responsive" />
                     </div>
                     <div class="col-sm-8 text-center">
-                        <p class="lead" style="font-size:1.2em; text-align:left; padding:20px;">
+                        <p class="lead">
                             Juniter ist das IT-Team der größten studentischen Unternehmensberatung Berlins, dem Company Consulting Team e.V. (CCT).
                             Neben der Entwicklung individueller Lösungen im Bereich der Informationstechnologien führen wir für Unternehmen auch IT-Beratung und IT-Projekte in Verbindung mit den weiteren Kompetenzfeldern des CCT durch.
                             <br><br>
@@ -95,13 +78,16 @@
                 </div>
             </div>
         </div>
-        <!-- /second section -->
-        <!-- third section - Services -->
+        <!-- 
+        ***************************
+        *    Unsere Leistungen    *
+        ***************************
+        -->
         <div id="leistungen" class="pad-section">
             <div class="fluidcontainer">
-                <h2 class="text-center" style="background:rgb(0,0,0); font-size:3em;">Unsere Leistungen</h2>
+                <h2 class="text-center">Unsere Leistungen</h2>
                 <br><br>
-                <div class="row text-center" style="margin-top:20px; background:rgb(0,0,0)">
+                <div class="row text-center" id="leistungen-header">
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <i class="glyphicon glyphicon-cloud"> </i>
                         <h4>Webentwicklung</h4>
@@ -125,7 +111,7 @@
                         <p></p>
                     </div>
                 </div>
-                <div class="row text-center" style="margin-top:30px; background-color:rgb(236,108,14); padding:20px;">
+                <div class="row text-center" id="leistungen-footer">
                     <div class="col-md-12">
                         <p class="lead" style="font-size:1.2em">
                             Unser interdisziplinäres Team ermöglicht es, die Bedürfnisse unserer Kunden in verschiedensten Bereichen zu erkennen und zu erfüllen.
@@ -136,20 +122,22 @@
                 </div>
             </div>
         </div>
-        <!-- /third section -->
-        <!-- fourth section - Information -->
-        <div id="referenzen" class="pad-section" style="background-color:rgb(38,38,38);">
+        <!-- 
+        ********************
+        *    Referenzen    *
+        ********************
+        -->
+        <div id="referenzen" class="pad-section background-darkgrey">
             <div class="container">
-                <h2 class="text-center" style="color: #777;">Referenzen</h2>
+                <h2 class="text-center text-lightgrey">Referenzen</h2>
                 <br><br>
-                <p style="text-align:left;">
+                <p class="text-left">
                     Die hervorragenden Qualifikationen unserer Mitarbeiter, sowie die Erfahrungen aus bereits erfolgreich absolvierten Projekten sind Indikatoren für unsere Leistungsfähigkeit.
                     <br><br>
                     Um Ihnen einen Überblick über durchgeführte Projekte zu geben, hier einige unserer Referenzen. 
                 </p>
                 <br><br>
                 <div class="row">
-
                     <!--Webapplikationen-->
                     <div class="col-xs-12 col-sm-12 col-md-2 text-center">
                         <i class="glyphicon glyphicon-cloud"> </i>
@@ -218,11 +206,14 @@
                 </div>
             </div>
         </div>
-        <!-- /fourth section -->
-        <!-- fifth section -->
+        <!-- 
+        ******************
+        *     Kontakt    *
+        ******************
+        -->
         <div id="kontakt" class="pad-section">
             <div class="container">
-                <h2 class="text-center" style="color:rgb(172, 60, 0);">Kontakt</h2>
+                <h2 class="text-center color-darkorange">Kontakt</h2>
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <p>Haben Sie Interesse an einem Projekt mit Juniter? Dann nehmen Sie bitte Kontakt mit unseren Projektmanagern auf.</p>
@@ -231,19 +222,22 @@
                 </div>
             </div>
         </div>
-        <!-- /fifth section -->
-        <!-- google map -->
+        <!-- 
+        ******************
+        *    Mitarbeit   *
+        ******************
+        -->
         <div id="jobs" class="pad-section">
             <div class="container">
                 <div class="row">
-                    <h2 style="color:white;" class="text-center">Mitarbeit</h2>
+                    <h2 class="text-center text-white">Mitarbeit</h2>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 text-center">
                         <img src="images/plakat.jpg" />
                     </div>
                     <div class="col-sm-8">
-                        <h3 style="color:rgb(236,108,14)">Deine Chance!</h3>
+                        <h3 class="text-juniter-orange">Deine Chance!</h3>
                         <p>
                             Juniter bietet Dir schon während des Studiums die Möglichkeit, Unternehmenskontakte zu knüpfen und Erfahrungen in der Arbeitswelt zu sammeln. Stelle Dich der Herausforderung, Deine Fähigkeiten und Kenntnisse in die Praxis umzusetzen, dabei Geld zu verdienen und Dein Wissen in Projektarbeit und im Projektmanagement auszubauen.
                             <br><br>
@@ -251,7 +245,7 @@
                             <br><br>
                             Nutze die Chance Dich persönlich und fachlich weiterzuentwickeln, damit Du später erfolgreich und mit den besten Voraussetzungen in Deinen Beruf einsteigen kannst!
                         </p>
-                        <h3 style="color:rgb(236,108,14)">Unsere Anforderungen</h3>
+                        <h3 class="text-juniter-orange">Unsere Anforderungen</h3>
                         <p>
                             Juniter versteht sich als ein innovatives IT-Team, in dem jedes Mitglied für sich den maximalen Nutzen aus Projektarbeit und Wissenstransfer ziehen sollte, um mit den gesammelten Erfahrungen Juniter weiter zu stärken und auszubauen.
                             <br><br>
@@ -261,7 +255,7 @@
                         </p>
                     </div>
                     <div class="col-md-12">
-                        <h3 style="color:rgb(236,108,14)">Interesse?</h3>
+                        <h3 class="text-juniter-orange">Interesse?</h3>
                         <p>Nutze das Kontaktformular um Dich bei uns zu bewerben!</p>
                     </div>
                     <div class="col-sm-12">
@@ -327,8 +321,8 @@
         <!-- attach JavaScripts -->
         <script src="js/jquery-3.1.1.js"></script>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+        <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
