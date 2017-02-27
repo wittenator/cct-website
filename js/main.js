@@ -2,15 +2,30 @@ var main = {};
 
 $(document).ready(function () {
 
-    window.addEventListener('resize', on_resize);
+    /***************************************************************************
+     *                              init events                                *
+     ***************************************************************************/
+    
 
-    function on_resize() {
-        // timeout wird gesetzt, damit die
+    $('#myModal').on('shown.bs.modal', function (e) {
+        $('#myModal .modal-title span').addClass("hidden");
+        $('#myModal .modal-body li').addClass("hidden");
+        $('#myModal .modal-title .' + e.relatedTarget.dataset.referenz).removeClass("hidden");
+        $('#myModal .modal-body .' + e.relatedTarget.dataset.referenz).removeClass("hidden");
+    });
+
+    $('#myModal').on('hidden.bs.modal', function (e) {
+        $('.#myModal modal-body li').addClass("hidden");
+    });
+    
+
+    window.addEventListener('resize', function () {
+        // timeout wird gesetzt, damit die funktion nicht unnötig häufig aufgerufen wird
         if (main.timeout) {
             clearTimeout(main.timeout);
         }
-        main.timeout = setTimeout(handle_home_screen(), 500);
-    }
+        main.timeout = setTimeout(render_components(), 500);
+    });
 
     // für "seichtes" scrollen:
     $(document).on('click', 'a', function (event) {
@@ -18,16 +33,48 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
+    });
+
+    $('#leistungen .glyphicon').click(function () {
 
     });
 
-    handle_home_screen();
+    // var colors = ["rgb(19,100,79)", "rgb(228,76,45)", "rgb(132,62,140)", "rgb(12,121,181)"];
+
+    $('#leistungen .glyphicon').mouseenter(function () {
+        $(this).css("color", "black");
+        $(this).css("border-color", "black");
+        $(this).css("backgroundColor", "rgb(236,108,14)");
+        // var topic = $(this).data("topic");
+        // $('.' + topic).toggleClass("hidden");
+        // $('.' + topic).css("color", colors[rnd]);
+    });
+
+    $('#leistungen .glyphicon').mouseleave(function () {
+        $(this).css("color", "rgb(236,108,14)");
+        $(this).css("border-color", "rgb(236,108,14)");
+        $(this).css("background-color", "black");
+        // var topic = $(this).data("topic");
+        // $('.' + topic).toggleClass("hidden");
+        // $('.' + topic).css("color", "rgb(236,108,14)");
+    });
+
+    /**************
+     * init site  *
+     **************/
+
+    render_components();
 
 });
 
+function render_components() {
+    handle_home();
+    handle_leistungen_und_referenzen();
+}
+
 // Funktion, die je nach Bildschirmbreite entweder das Video lädt oder nur 
 // ein Bild anzeigt
-function handle_home_screen() {
+function handle_home() {
     if (window.innerWidth < 1133) {
         var html = [];
         html.push('<div style="position:absolute; top:30%; left:20%;">');
@@ -65,6 +112,9 @@ function handle_home_screen() {
     }
 }
 
+function handle_leistungen_und_referenzen() {
+    $('#leistungen .glyphicon')
+}
 //function detectmob() {
 //    if (navigator.userAgent.match(/Android/i)
 //            || navigator.userAgent.match(/webOS/i)

@@ -11,7 +11,7 @@
 
         <link href="css/style.css" rel="stylesheet" />
     </head>
-    <body>
+    <body style="overflow-x:hidden">
         <!-- 
         ***************************
         *    Navgiationsleiste    *
@@ -33,10 +33,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#juniter">Home</a></li>
                         <li><a href="#ueber_uns">&Uumlber uns</a></li>
-                        <li><a href="#leistungen">Leistungen</a></li>
-                        <li><a href="#referenzen">Referenzen</a></li>
+                        <li><a href="#leistungen">Leistungen und Referenzen</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
-                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#jobs">Mitglied werden</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -84,125 +83,131 @@
         ***************************
         -->
         <div id="leistungen" class="pad-section">
-            <div class="fluidcontainer">
-                <h2 class="text-center">Unsere Leistungen</h2>
-                <br><br>
-                <div class="row text-center" id="leistungen-header">
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <i class="glyphicon glyphicon-cloud"> </i>
-                        <h4>Webentwicklung</h4>
-                        <p style="text-align:center">
-                            Webseiten<br>
-                            Webanwendungen
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <i class="glyphicon glyphicon-phone"> </i>
-                        <h4>Mobile Anwendungen</h4>
-                        <p>
-                            Android<br>
-                            iOS<br>
-                            Windows Phone
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <i class="glyphicon glyphicon-thumbs-up"> </i>
-                        <h4>IT-Beratung</h4>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="row text-center" id="leistungen-footer">
-                    <div class="col-md-12">
-                        <p class="lead" style="font-size:1.2em">
-                            Unser interdisziplinäres Team ermöglicht es, die Bedürfnisse unserer Kunden in verschiedensten Bereichen zu erkennen und zu erfüllen.
-                            Da wir unabhängig von Hard- oder Softwareanbietern arbeiten, sind wir in der Lage kundenspezifische Lösungen zu entwickeln und Ihnen somit die individuell am besten geeigneten Produkte anzubieten.
-                            So wird für Ihr Unternehmen ein greifbarer und nachhaltiger Nutzen geschaffen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 
-        ********************
-        *    Referenzen    *
-        ********************
-        -->
-        <div id="referenzen" class="pad-section background-darkgrey">
-            <div class="container">
-                <h2 class="text-center text-lightgrey">Referenzen</h2>
-                <br><br>
-                <p class="text-left">
-                    Die hervorragenden Qualifikationen unserer Mitarbeiter, sowie die Erfahrungen aus bereits erfolgreich absolvierten Projekten sind Indikatoren für unsere Leistungsfähigkeit.
-                    <br><br>
-                    Um Ihnen einen Überblick über durchgeführte Projekte zu geben, hier einige unserer Referenzen. 
-                </p>
-                <br><br>
+            <div class="fluidcontainer" id="leistungen_header">
                 <div class="row">
-                    <!--Webapplikationen-->
+                    <h2 class="text-center" style="color:grey;">Leistungen und Referenzen</h2>
+                </div>
+                <div class="row" style="margin-top:100px; color:white;">
+                    <div class="col-xs-12 col-sm-6 col-md-2 text-center">
+                        <i class="glyphicon glyphicon-cloud"  data-referenz="webdev" data-toggle="modal" data-target="#myModal" > </i>
+                        <br>
+                        <h4>Webentwicklung</h4>
+                        <div style="text-align:center;">
+                            <span style="color:lightgrey;">
+                                Entwicklung/ Optimierung dynamischer Webseiten
+                                <br><br>
+                                <a href="#" style="color: rgb(236,108,14);" data-referenz="webdev" data-toggle="modal" data-target="#myModal">
+                                    Referenzen
+                                </a>
+                                <br><br>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 text-center">
+                        <i class="glyphicon glyphicon-phone"  data-referenz="mobdev" data-toggle="modal" data-target="#myModal"> </i>
+                        <br>
+                        <h4>App-Entwicklung</h4>
+                        <div style="text-align: center;">
+                            <span style="color:lightgrey">
+                                Entwicklung von Applikationen für Android oder iOS
+                                <br><br>
+                                <a href="#" style="color: rgb(236,108,14);" data-referenz="mobdev" data-toggle="modal" data-target="#myModal">
+                                    Referenzen
+                                </a>
+                                <br><br>
+                            </span>
+                        </div>
+                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-2 text-center">
-                        <i class="glyphicon glyphicon-cloud"> </i>
+                        <i class="glyphicon glyphicon-thumbs-up" data-referenz="itcons" data-toggle="modal" data-target="#myModal"> </i>
+                        <br>
+                        <h4>IT-Beratung</h4>
+                        <div style="text-align:center;">
+                            <span style="color:lightgrey">
+                                Implementierung und Optimierung von IT-Strukturen
+                                <br><br>
+                                <a href="#" style="color: rgb(236,108,14);" data-referenz="itcons" data-toggle="modal" data-target="#myModal">
+                                    Referenzen
+                                </a>
+                                <br><br>
+                            </span>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <h3 class="text-center">Webapplikationen</h3>
-                        <p>Unsere Kompetenzen umfassen die Entwicklung von maßgeschneiderten und innovativen Web 2.0 –Lösungen. Sei es Ihre professionelle Webpräsenz oder Ihr Online-Shop- wir ermöglichen Ihnen eine optimal an Ihre Vorstellungen angepasste Planung, Konzipierung und Realisierung Ihrer Vorhaben.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
+                        <i class="glyphicon glyphicon-user" data-referenz="indivsw" data-toggle="modal" data-target="#myModal"> </i>
+                        <br> 
+                        <h4>Individualsoftware</h4>
+                        <div style="text-align: center;">
+                            <span style="color:lightgrey">
+                                Entwicklung individueller IT-Lösungen
+                                <br><br>
+                            </span>
+                            <a href="#" style="color: rgb(236,108,14);" data-referenz="indivsw" data-toggle="modal" data-target="#myModal">
+                                Referenzen
+                            </a>
+                            <br><br>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Referenzen</h3>
-                        <ul>
-                            <li><p>Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt (2011)</p></li>
-                            <li><p>Konzeptionierung und Anpassung eines Onlineshops für gebrauchte Kinderkleidung (2011)</p></li>
-                            <li><p>Entwicklung einer Webseite für die Perform GmbH inklusive Design, Umsetzung in Drupal 7 und Erstellung von Texten (2012)</p></li>
-                        </ul>
-                    </div>     
+                    <div class="col-xs-12 col-sm-6 col-md-2 text-center">
+                        <i class="glyphicon glyphicon-transfer" data-referenz="network" data-toggle="modal" data-target="#myModal"> </i>
+                        <br>
+                        <h4>Netzwerke/Datenbanken</h4>
+                        <span style="color:lightgrey">
+                            Planung, Installation und Konfiguration ganzer Netzwerke
+                            <br><br>
+                        </span>
+                        <a href="#" style="color: rgb(236,108,14);" data-referenz="network" data-toggle="modal" data-target="#myModal">
+                            Referenzen
+                        </a>
+                        <br><br>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 text-center">
+                        <i class="glyphicon glyphicon-search" data-referenz="systemanalysis" data-toggle="modal" data-target="#myModal"> </i>
+                        <br>
+                        <h4>Systemanalyse</h4>
+                        <span style="color:lightgrey">
+                            Analyse von vorhandenen Softwaresystemen
+                            <br><br>
+                        </span>
+                        <a href="#" style="color: rgb(236,108,14);" data-referenz="systemanalysis" data-toggle="modal" data-target="#myModal">
+                            Referenzen
+                        </a>
+                        <br><br>
+                    </div>
+                    <!-- 
+                        Ab hier kommen die Referenzen
+                    -->
 
-                    <!--Individualsoftware-->
-                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
-                        <i class="glyphicon glyphicon-user"> </i>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <h3 class="text-center">Individualsoftware</h3>
-                        <p>Wir bieten Ihrem Unternehmen individuelle IT-Lösungen , die Sie durch ihre Flexibilität und Effizienz in ihren Arbeitsalltag unterstützen. Dabei analysieren, planen und implementieren wir eine für Sie maßgeschneiderte Lösung. Umfassende Expertise in der Nutzung von OpenSource-Komponenten ermöglicht es uns, effektive und kostengünstige Ergebnisse zu liefern.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Referenzen</h3>
-                        <ul>
-                            <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
-                            <li><p>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</p></li>
-                            <li><p>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</p></li>
-                        </ul>
-                    </div>     
-
-                    <!--IT-Beratung-->
-                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
-                        <i class="glyphicon glyphicon-thumbs-up"> </i>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <h3 class="text-center">IT-Beratung</h3>
-                        <p>Aufgrund unser langjährigen Erfahrung im Bereich der erfolgreichen Implementierung und Optimierung von IT-Strukturen in Unternehmen sind wir in der Lage Sie bei der Erneuerung Ihrer firmeneigenen Infrastruktur sowie Ihrer Software zu unterstützen.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Referenzen</h3>
-                        <ul>
-                            <li><p>Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag (2011)</p></li>
-                            <li><p>Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon (2008)</p></li>
-                            <li><p>Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter (2008)</p></li>
-                        </ul>
-                    </div>     
-
-                    <!--Mobile Anwendungen-->
-                    <div class="col-xs-12 col-sm-12 col-md-2 text-center">
-                        <i class="glyphicon glyphicon-phone"> </i>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <h3 class="text-center">Mobile Anwendungen</h3>
-                        <p>Mobile Anwendungen sind für erfolgreiche Unternehmen unentbehrlich. Wir programmieren für Sie innovative und intuitive Apps, unterstützt durch die Kreativität aus engen Kooperationen mit Start-Ups.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Referenzen</h3>
-                        <ul>
-                            <li><p>Implementierung einer Applikation für Android (2013)</p></li>
-                        </ul>
-                    </div>     
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content" style="background-color:#252525;">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                        Referenzen - 
+                                        <span class="webdev">Webentwicklung</span>
+                                        <span class="indivsw">Individualsoftware</span>
+                                        <span class="mobdev">App-Entwicklung</span>
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li class="webdev">Für einen selbstständigen Ingenieur wurde eine mehrsprachige Homepage erstellt</li>
+                                        <li class="webdev">Konzeptionierung und Anpassung eines Onlineshops für gebrauchte Kinderkleidung</li>
+                                        <li class="webdev">Entwicklung einer Webseite für die Perform GmbH inklusive Design, Umsetzung in Drupal 7 und Erstellung von Texten</li>
+                                        <li class="indivsw">Implementierung einer Desktop-Applikation zur Kommunikation zwischen verschiedenen Arbeitsplätzen unter Windows für einen prominenten Verlag</li>
+                                        <li class="indivsw">Implementierung eines Benchmarking-Tools und Migration einer bisher MS Access-basierten Datenbanklösung für die internationale Unternehmensberatung Confideon</li>
+                                        <li class="indivsw">Migration einer Webpräsenz unter Hochsicherheit von Amerika nach Hamburg für einen führenden globalen Supply-Chain-Anbieter</li>
+                                        <li class="mobdev">Implementierung einer Applikation für Android</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn button-orange" data-dismiss="modal">Schließen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Modal -->
                 </div>
             </div>
         </div>
@@ -238,55 +243,69 @@
                     </div>
                     <div class="col-sm-8">
                         <h3 class="text-juniter-orange">Deine Chance!</h3>
-                        <p>
+                        <span style="color:white;">
                             Juniter bietet Dir schon während des Studiums die Möglichkeit, Unternehmenskontakte zu knüpfen und Erfahrungen in der Arbeitswelt zu sammeln. Stelle Dich der Herausforderung, Deine Fähigkeiten und Kenntnisse in die Praxis umzusetzen, dabei Geld zu verdienen und Dein Wissen in Projektarbeit und im Projektmanagement auszubauen.
                             <br><br>
                             Wir bieten Dir abwechslungsreiche Projektarbeit im Team und die Möglichkeit, interessante und nette Leute kennen zu lernen. In Schulungen und Workshops werden Dein Know-How, Hintergrundwissen und Soft Skills gefördert, um so die Qualität der Projektdurchführung und -ergebnisse zu gewährleisten.
                             <br><br>
-                            Nutze die Chance Dich persönlich und fachlich weiterzuentwickeln, damit Du später erfolgreich und mit den besten Voraussetzungen in Deinen Beruf einsteigen kannst!
-                        </p>
+                            Nutze die Chance Dich persönlich und fachlich weiterzuentwickeln, damit Du später erfolgreich und mit den besten Voraussetzungen in Deinen Beruf einsteigen kannst!<br><br>
+                        </span>
+                        <button class="btn button-orange"  data-toggle="modal" data-target="#myModal2">Jetzt bewerben!</button>
                         <h3 class="text-juniter-orange">Unsere Anforderungen</h3>
-                        <p>
+                        <span style="color:white;">
                             Juniter versteht sich als ein innovatives IT-Team, in dem jedes Mitglied für sich den maximalen Nutzen aus Projektarbeit und Wissenstransfer ziehen sollte, um mit den gesammelten Erfahrungen Juniter weiter zu stärken und auszubauen.
                             <br><br>
                             Um bei uns mitzuarbeiten, solltest Du neben dem Studentenstatus viel Engagement und ein gutes Zeitmanagement aufzeigen, sowie fundierte Kenntnisse auf dem Gebiet der Informationstechnologie besitzen.
                             <br><br>
                             Team- und Kritikfähigkeit, sowie Selbstständigkeit und Verantwortungsbewusstsein sind wichtige Voraussetzungen, damit Juniter als Einheit funktioniert und die Projektarbeit reibungslos ablaufen kann.
-                        </p>
-                    </div>
-                    <div class="col-md-12">
-                        <h3 class="text-juniter-orange">Interesse?</h3>
-                        <p>Nutze das Kontaktformular um Dich bei uns zu bewerben!</p>
+                        </span>
                     </div>
                     <div class="col-sm-12">
-                        <form action="formular.php" method="post">
-
-                            <div class="form-group">
-                                <label for="vname">Vorname</label>
-                                <input class="form-control myform" id="vname" name="vname" size="40" type="text">
-                                <label for="vname">Name</label>
-                                <input class="form-control myform" id="name" name="vname" size="40" type="text">
-                                <label for="vname">E-Mail</label>
-                                <input class="form-control myform" id="mail" name="mail" size="40" type="email">
-                                <label for="tel">Telefon</label>
-                                <input class="form-control myform" id="tel" name="tel" size="40" type="text">
-                                <label for="hochschule">Hochschule</label>
-                                <input class="form-control myform" id="hochschule" name="hochschule" size="40" type="text">
-                                <label for="studiengang">Studiengang</label>
-                                <input class="form-control myform" id="studiengang" name="studiengang" size="40" type="text">
-                            </div>  
-                            <label for="kenntnisse">Kenntnisse (IT-KnowHow, Software-/ Hardware-Kenntnisse, SoftSkills, Projekterfahrung etc.):</label>
-                            <textarea class="form-control myform" id="kenntnisse" name="kenntnisse" cols="35" rows="5" style="width: 80%;"></textarea>
-                            <br>
-                            <label for="motivation">Motivation (Warum möchtest Du Dich bei Juniter engagieren? Was möchtest Du lernen? Welche Ziele hast Du?):</label>
-                            <textarea class="form-control myform" id="motivation" name="motivation" cols="35" rows="5" style="width: 80%;"></textarea>
-                            <br>
-                            <label for="verfuegbarkeit">Verfügbarkeit: (Wie viele Stunden bist Du bereit Dich wöchentlich für Juniter zu engagieren? Wann wirst Du Dein Studium voraussichtlich beenden? Planst Du längere Abwesenheiten für Auslandsstudium, Praktika o.ä.?): </label>
-                            <textarea class="form-control myform" id="verfuegbarkeit" name="verfuegbarkeit" cols="35" rows="5" style="width: 80%"></textarea>
-                            <br>
-                            <input class="btn btn-success" style="background:rgb(236,108,14);border:none;" name="submit" value="Senden" type="submit">
-                            <br>
-                        </form>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content" style="background-color:#252525;">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            <span style="color:white">Bewerbung</span>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="formular.php" method="post">
+                                            <div class="form-group">
+                                                <label for="vname">Vorname</label>
+                                                <input class="form-control myform" id="vname" name="vname" size="40" type="text">
+                                                <label for="vname">Name</label>
+                                                <input class="form-control myform" id="name" name="vname" size="40" type="text">
+                                                <label for="vname">E-Mail</label>
+                                                <input class="form-control myform" id="mail" name="mail" size="40" type="email">
+                                                <label for="tel">Telefon</label>
+                                                <input class="form-control myform" id="tel" name="tel" size="40" type="text">
+                                                <label for="hochschule">Hochschule</label>
+                                                <input class="form-control myform" id="hochschule" name="hochschule" size="40" type="text">
+                                                <label for="studiengang">Studiengang</label>
+                                                <input class="form-control myform" id="studiengang" name="studiengang" size="40" type="text">
+                                            </div>  
+                                            <label for="kenntnisse">Kenntnisse (IT-KnowHow, Software-/ Hardware-Kenntnisse, SoftSkills, Projekterfahrung etc.):</label>
+                                            <textarea class="form-control myform" id="kenntnisse" name="kenntnisse" cols="35" rows="5" style="width: 80%;"></textarea>
+                                            <br>
+                                            <label for="motivation">Motivation (Warum möchtest Du Dich bei Juniter engagieren? Was möchtest Du lernen? Welche Ziele hast Du?):</label>
+                                            <textarea class="form-control myform" id="motivation" name="motivation" cols="35" rows="5" style="width: 80%;"></textarea>
+                                            <br>
+                                            <label for="verfuegbarkeit">Verfügbarkeit: (Wie viele Stunden bist Du bereit Dich wöchentlich für Juniter zu engagieren? Wann wirst Du Dein Studium voraussichtlich beenden? Planst Du längere Abwesenheiten für Auslandsstudium, Praktika o.ä.?): </label>
+                                            <textarea class="form-control myform" id="verfuegbarkeit" name="verfuegbarkeit" cols="35" rows="5" style="width: 80%"></textarea>
+                                            <br>
+                                            <input class="btn btn-success" style="background:rgb(236,108,14);border:none;" name="submit" value="Senden" type="submit">
+                                            <br>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn button-orange" data-dismiss="modal">Schließen</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Modal -->
                     </div>
                 </div>
             </div>
@@ -296,19 +315,21 @@
         <footer>
             <hr />
             <div class="container">
-                <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="col-xs-6 col-sm-3 col-md-3">
                     <img src="images/juniter_white.gif" class="img-responsive"/>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="col-xs-6 col-sm-3 col-md-3">
                     <img src="images/cct_white.gif" class="img-responsive" />
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <br>
                     Telefon: +49-30-34703880<br>
                     Fax: +49-30-34703881<br>
                     kontakt@juniter.de<br>
                     Impressum | Copyright<br>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <br>
                     Juniter / Company Consulting Team e.V.<br>
                     c/o TU Berlin - EB 512<br>
                     Strasse des 17.Juni 145<br>
@@ -322,7 +343,7 @@
         <script src="js/jquery-3.1.1.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-        <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
