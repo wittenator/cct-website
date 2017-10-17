@@ -20,14 +20,14 @@ $(document).ready(function () {
     
 
     window.addEventListener('resize', function () {
-        // timeout wird gesetzt, damit die funktion nicht unnötig häufig aufgerufen wird
+        // timeout wird gesetzt, damit die funktion nicht unnï¿½tig hï¿½ufig aufgerufen wird
         if (main.timeout) {
             clearTimeout(main.timeout);
         }
         main.timeout = setTimeout(render_components(), 500);
     });
 
-    // für "seichtes" scrollen:
+    // fï¿½r "seichtes" scrollen:
     $(document).on('click', 'a', function (event) {
         event.preventDefault();
         $('html, body').animate({
@@ -72,7 +72,7 @@ function render_components() {
     handle_leistungen_und_referenzen();
 }
 
-// Funktion, die je nach Bildschirmbreite entweder das Video lädt oder nur 
+// Funktion, die je nach Bildschirmbreite entweder das Video lï¿½dt oder nur 
 // ein Bild anzeigt
 function handle_home() {
     if (window.innerWidth < 1133) {
@@ -98,7 +98,7 @@ function handle_home() {
         html.push('		</div>');
         html.push('	</div>');
         html.push('	<div class="overlay-desc2">');
-        html.push('		<a id="the-button" class="btn btn-success" style="display:none; background:rgb(236,108,14);border:none;" href="#ueber_uns">mehr erfahren</a>');
+        html.push('		<a id="the-button" class="btn btn-success" style="display:none; background:rgb(236,108,14);border:none;" href="#ueber_uns">Erfahre mehr!</a>');
         html.push('	</div>');
         html.push(' </div>');
         html.push('</div>');
